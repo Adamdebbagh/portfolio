@@ -10,6 +10,10 @@
         <link rel="stylesheet" href="css/style.css">
         
         <script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js">             </script>
+      <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+      <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      
         <style type="text/css">.fancybox-margin{margin-right:0px;}
         </style>
     </head>
@@ -17,7 +21,7 @@
     <div class="container">
       <div class="row">
       <div class="col-md-6">
-          <img src="http://placekitten.com/110/110"  class="img-rounded title-logo" >          
+          <img src="http://placekitten.com/110/110"  class="img-rounded title-logo" alt="logo image">          
       </div>
       <div class="col-md-6 text-right text-uppercase">
         <h1 class=" title-super text-thin">Adam Debbagh</h1>
@@ -27,7 +31,7 @@
         <hr>
     <div class="row">
         <div class="col-md-12">
-      <img src="http://placekitten.com/1150/340" class="img-responsive">
+      <img src="http://placekitten.com/1150/340" class="img-responsive" alt ="image">
         </div>
     </div>
     <div class="row">
@@ -37,29 +41,45 @@
     </div>
     <div class="row text-center">
       <div class="col-md-6">
-        <img src="http://placekitten.com/555/299" class="img-responsive">
+        <img src="http://placekitten.com/555/299" class="img-responsive" alt="image" data-toggle="modal" data-target="#morningCat">
         <h3>Morning</h3>
         <p><a href="http://github.com/">Link to project</a></p>
       </div>
       <div class="col-md-6">
-        <img src="http://placekitten.com/555/300" class="img-responsive">
+        <img src="http://placekitten.com/555/300" class="img-responsive" alt="image">
         <h3>Where is my Mom </h3>
         <p><a href="http://github.com/">Link to project</a></p>
       </div>
     </div>
     <div class="row text-center">
           <div class="col-md-6">
-        <img src="http://placekitten.com/550/299" class="img-responsive">
+        <img src="http://placekitten.com/550/299" class="img-responsive" alt="image">
         <h3>What !</h3>
         <p><a href="http://github.com/">Link to project</a></p>
       </div>
       <div class="col-md-6">
-        <img src="http://placekitten.com/551/299" class="img-responsive">
+        <img src="http://placekitten.com/551/299" class="img-responsive" alt="image">
         <h3>Zoom in</h3>
         <p><a href="http://github.com/">Link to project</a></p>
       </div>
     </div>
 </div>
-  
+ <!-- Modal -->
+<div class="modal fade" id="morningCat" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Favorite Cat Project</h4>
+      </div>
+      <div class="modal-body">
+        <img class="img-responsive" src="http://placekitten.com/555/299" alt="image">
+        <p>Good Mornin cat Project is the result of funny event that happened at the pet store...bla bla bla. view complete Project</p><a href="http://www.tekwin.org/">here</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div> 
 </body>
 </html>
